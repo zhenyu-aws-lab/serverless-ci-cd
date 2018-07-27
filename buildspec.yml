@@ -10,7 +10,7 @@ phases:
       # install dependencies
       # - npm install --silent --progress=false -g serverless
       #- npm install --silent --progress-false
-      #- npm --version
+      - node --version
       - npm install
   build:
     commands:
