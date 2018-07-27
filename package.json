@@ -10,14 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1Strategy/serverless-ci-cd.git"
+    "url": "git+https://github.com/zhenyu-aws-lab/serverless-ci-cd.git"
   },
-  "author": "1Strategy",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/1Strategy/serverless-ci-cd/issues"
-  },
-  "homepage": "https://github.com/1Strategy/serverless-ci-cd#readme",
+  "homepage": "https://github.com/zhenyu-aws-lab/serverless-ci-cd#readme",
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
