@@ -12,10 +12,14 @@ phases:
       #- npm install --silent --progress-false
       - node --version
       - npm install
+      #- sls dynamodb install --stage dev
+      #- sls dynamodb start --stage dev
+      #- sls dynamodb migrate --stage dev
+      #- sls offline start --stage dev
   build:
     commands:
       # linting and unit tests
-      - npm run-script lint
+      # - npm run-script lint
       - npm test
 #       # deploy integration testing environment
 #       - serverless deploy --stage test
