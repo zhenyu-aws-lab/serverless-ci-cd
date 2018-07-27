@@ -2,7 +2,7 @@ service: serverless-ci-cd
 
 provider:
   name: aws
-  runtime: nodejs6.10 # AWS Lambda supports v.4.3.2 and v.6.10.3
+  runtime: nodejs8.10 # AWS Lambda supports v.4.3.2 and v.6.10.3
 
 # Overwrite defaults
   memorySize: 512 # overwrite default memory of 1024
