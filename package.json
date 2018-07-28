@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/zhenyu-aws-lab/serverless-ci-cd.git"
   },
+   "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
   "license": "Apache-2.0",
   "homepage": "https://github.com/zhenyu-aws-lab/serverless-ci-cd#readme",
   "devDependencies": {
