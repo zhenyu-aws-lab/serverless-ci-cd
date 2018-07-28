@@ -31,8 +31,8 @@ phases:
 #       # package a version of this code to go to prod eventually
 #       - mkdir artifacts
 #       - serverless package --package artifacts --stage prod -v
-   post_build:
-#     commands:
+  post_build:
+     commands:
 #       # tear down integration testing environment
         - serverless remove --stage test -v
 
