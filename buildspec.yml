@@ -11,6 +11,7 @@ phases:
       - npm install --silent --progress=false -g serverless
       - npm install --silent --progress-false
       - npm --version
+      - node --version
   build:
     commands:
       # linting and unit tests
