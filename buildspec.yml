@@ -12,6 +12,7 @@ phases:
       #- npm install --silent --progress-false
       - node --version
       - npm install
+      - npm install serverless -g
       #- sls dynamodb install --stage dev
       #- sls dynamodb start --stage dev
       #- sls dynamodb migrate --stage dev
@@ -19,21 +20,21 @@ phases:
   build:
     commands:
       # linting and unit tests
-      # - npm run-script lint
+      - npm run-script lint
       - npm test
 #       # deploy integration testing environment
-#       - serverless deploy --stage test
+      - serverless deploy --stage test
 #       # integration tests
-#       - npm run-script integration
+      - npm run-script integration
 #       # if successful, deploy to staging environment
 #       - serverless deploy --stage staging -v
 #       # package a version of this code to go to prod eventually
 #       - mkdir artifacts
 #       - serverless package --package artifacts --stage prod -v
-#   post_build:
+   post_build:
 #     commands:
 #       # tear down integration testing environment
-#       - serverless remove --stage test -v
+        - serverless remove --stage test -v
 
 # artifacts:
 #   files:
