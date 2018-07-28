@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/1Strategy/serverless-github-codepipeline.git"
   },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
