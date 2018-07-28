@@ -10,9 +10,9 @@ phases:
       # install dependencies
       # - npm install --silent --progress=false -g serverless
       #- npm install --silent --progress-false
-      - node --version
+      # - node --version
       - npm install
-      - npm install serverless -g
+      - npm install -g serverless
       #- sls dynamodb install --stage dev
       #- sls dynamodb start --stage dev
       #- sls dynamodb migrate --stage dev
