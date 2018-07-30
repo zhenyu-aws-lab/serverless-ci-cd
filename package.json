@@ -1,6 +1,6 @@
 {
   "name": "zhenyu-serverless-ci-cd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Demo Serverless project using CodeBuild and CodePipeline for CI/CD. Tutorial available at http://www.1strategy.com/blog/.",
   "main": "handler.js",
   "scripts": {
