@@ -10,4 +10,6 @@ echo "$PWD"
 echo "$CODEBUILD_SRC_DIR/artifacts/$env"
 echo "Deploying app to $env"
 echo "====================="
-serverless deploy --stage $env --package $CODEBUILD_SRC_DIR/artifacts/$env -v
+
+serverless rollback
+# serverless deploy --stage $env --package $CODEBUILD_SRC_DIR/artifacts/$env -v
