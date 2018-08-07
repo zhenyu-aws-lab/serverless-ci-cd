@@ -11,7 +11,7 @@ echo "$CODEBUILD_SRC_DIR/artifacts/$env"
 echo "Deploying app to $env"
 echo "====================="
 
-serverless rollback
+serverless rollback --stage $env
 
 echo "rolling back "
 echo "====================="
