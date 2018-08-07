@@ -11,9 +11,9 @@ echo "$CODEBUILD_SRC_DIR/artifacts/$env"
 echo "Deploying app to $env"
 echo "====================="
 
-export TIMESTAMP=$(sls rollback | awk '/Timestamp: 15/ {print $NF;exit}')
+export TIMESTAMP=$(sls rollback --stage $env | awk '/Timestamp: 15/ {print $NF;exit}')
 
-sls rollback -t $TIMESTAMP
+sls rollback --stage $env -t $TIMESTAMP
 
 echo "rolling back "
 echo "====================="
