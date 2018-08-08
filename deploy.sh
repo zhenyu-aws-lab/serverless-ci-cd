@@ -15,7 +15,7 @@ echo "====================="
 # export TIMESTAMP=$(sls rollback --stage $env | awk '/Timestamp: 15/ {print $NF;exit}')
 # sls rollback --stage $env -t $TIMESTAMP
 
-echo "rolling back not "
+echo "rolling back go "
 echo "====================="
 
 # serverless deploy --stage $env --package $CODEBUILD_SRC_DIR/artifacts/$env -v
