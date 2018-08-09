@@ -29,7 +29,7 @@ provider:
 # Define our lambda functions and the events they respond to
 functions:
   listTodos:
-#    handler: todos/handler.list
+    handler: todos/handler.list
 #    events:
 #      - http:
 #          path: todos
