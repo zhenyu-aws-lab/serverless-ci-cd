@@ -29,17 +29,17 @@ provider:
 # Define our lambda functions and the events they respond to
 functions:
   listTodos:
-    handler: todos/handler.list
-    events:
-      - http:
-          path: todos
-          method: get
+#    handler: todos/handler.list
+#    events:
+#      - http:
+#          path: todos
+#          method: get
   postTodos:
     handler: todos/handler.post
-    events:
-      - http:
-          path: todos
-          method: post
+#    events:
+#      - http:
+#          path: todos
+#          method: post
 
 # Define CloudFormation resource templates here
 resources:
