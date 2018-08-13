@@ -68,16 +68,16 @@ resources:
           ReadCapacityUnits: '1'
           WriteCapacityUnits: '1'
 
-# custom:
+ custom:
 #  dynamodb:
 #    start:
 #      port: 8000
       # uncomment for already-running local DynamoDB
       # noStart: true
-#  output:
-#    file: .build/stack.json # where stack output should be stored by the serverless-stack-output plugin
+  output:
+    file: .build/stack.json # where stack output should be stored by the serverless-stack-output plugin
 
-#plugins:
+plugins:
 #  - serverless-dynamodb-local # use this with serverless-offline to create local dev environment
 #  - serverless-offline
-#  - serverless-stack-output # store stack output in a file
+  - serverless-stack-output # store stack output in a file
