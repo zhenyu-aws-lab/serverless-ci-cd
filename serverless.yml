@@ -77,7 +77,7 @@ resources:
 #  output:
 #    file: .build/stack.json # where stack output should be stored by the serverless-stack-output plugin
 
-plugins:
-  - serverless-dynamodb-local # use this with serverless-offline to create local dev environment
-  - serverless-offline
-  - serverless-stack-output # store stack output in a file
+#plugins:
+#  - serverless-dynamodb-local # use this with serverless-offline to create local dev environment
+#  - serverless-offline
+#  - serverless-stack-output # store stack output in a file
