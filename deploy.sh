@@ -3,7 +3,7 @@
 echo "Installing serverless"
 echo "====================="
 npm install -g serverless
-npm install serverless-dynamodb-local serverless-offline serverless-stack-output # we have to install the three plugins specified in our serverless.yml to avoid errors, even though we won't be using them
+npm install serverless-stack-output # we have to install the three plugins specified in our serverless.yml to avoid errors, even though we won't be using them
 
 echo "====================="
 echo "$PWD"
