@@ -17,7 +17,7 @@ echo "====================="
 
 echo "rolling back go "
 echo "====================="
-
+echo "====================="
 
 
 serverless deploy --stage $env --package $CODEBUILD_SRC_DIR/artifacts/$env -v
