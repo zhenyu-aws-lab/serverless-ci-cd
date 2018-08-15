@@ -1,5 +1,7 @@
 #! /bin/bash
 npm install serverless -g
+npm install serverless-stack-output # we have to install the three plugins specified in our serverless.yml to avoid errors, even though we won't be using them
+
 
 echo "====================="
 echo "$PWD"
