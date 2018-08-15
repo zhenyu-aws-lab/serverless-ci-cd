@@ -1,5 +1,5 @@
 #! /bin/bash
-
+npm install serverless -g
 
 echo "====================="
 echo "$PWD"
