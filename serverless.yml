@@ -65,8 +65,8 @@ resources:
             AttributeName: 'id'
             KeyType: HASH
         ProvisionedThroughput:
-          ReadCapacityUnits: '5'
-          WriteCapacityUnits: '5'
+          ReadCapacityUnits: '1'
+          WriteCapacityUnits: '1'
 
 custom:
 #  dynamodb:
