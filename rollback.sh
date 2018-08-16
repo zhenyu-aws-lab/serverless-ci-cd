@@ -21,7 +21,7 @@ echo "Timestamp"
 echo $TIMESTAMP
 
 
-sls rollback --stage $env | grep Timestamp | tail -n 1| cut -d: -f3
+sls rollback --stage $env -t $TIMESTAMP
 
 echo "rolling back go "
 echo "====================="
