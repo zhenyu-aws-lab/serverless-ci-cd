@@ -10,7 +10,7 @@ echo "Deploying app to $env"
 echo "====================="
 
 #### for rollback use 
-export TIMESTAMP=$(sls rollback --stage $env | awk '/Timestamp: 15/ {print $NF;exit}')
+export TIMESTAMP=$(sls rollback --stage $env | grep Timestamp | tail -n 1| cut -d: -f3)
 
 
 echo "output timestamp"
@@ -21,7 +21,7 @@ echo "Timestamp"
 echo $TIMESTAMP
 
 
-sls rollback --stage $env -t $TIMESTAMP
+sls rollback --stage $env | grep Timestamp | tail -n 1| cut -d: -f3
 
 echo "rolling back go "
 echo "====================="
