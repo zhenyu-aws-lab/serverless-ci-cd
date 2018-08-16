@@ -11,6 +11,16 @@ echo "====================="
 
 #### for rollback use 
 export TIMESTAMP=$(sls rollback --stage $env | awk '/Timestamp: 15/ {print $NF;exit}')
+
+
+echo "output timestamp"
+
+sls rollback --stage $env
+
+echo "Timestamp"
+echo $TIMESTAMP
+
+
 sls rollback --stage $env -t $TIMESTAMP
 
 echo "rolling back go "
