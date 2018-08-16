@@ -65,7 +65,7 @@ resources:
             AttributeName: 'id'
             KeyType: HASH
         ProvisionedThroughput:
-          ReadCapacityUnits: '15'
+          ReadCapacityUnits: '10'
           WriteCapacityUnits: '5'
 
 custom:
